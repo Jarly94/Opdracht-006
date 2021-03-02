@@ -1,0 +1,149 @@
+body {
+    margin: 10px;
+    background-color: grey;
+}
+
+.headerBox {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.articleBox {
+    margin: 10px auto;
+    padding: 20px;
+    background-color: silver;
+    border-radius: 10px;
+}
+
+/* Footer element related */
+.footerBox {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 500px;
+    padding: 10px;
+    padding-bottom: 0;
+    background-color: silver;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contactlist{
+    padding: 0;
+}
+
+/* Main element related */
+.generalBox {
+    margin: 0 auto; 
+    padding: 10px 0;
+    background-color: silver;
+    border-radius: 10px;
+/*     width: 550px; */
+}
+
+.generalBox h3 {
+    padding: 0 20px;
+}
+
+.myFav1 {
+    display: inline-block;
+}
+
+.myFav2{
+    display: inline-block;
+}
+
+/* Navigation bar related */
+.naviBox {
+    margin: 0 50px;
+    padding: 15px;
+    text-align: center;
+}
+
+.naviBar{
+    background-color: silver;
+    border-radius: 8px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+
+.naviBar li{
+    display: inline-block;
+    margin: 0 7px;
+    padding: 7px;
+}
+
+.naviBar a {
+    color: white;
+    background-color: tan;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.naviBar a:hover:not(.currentpage){
+    background-color: goldenrod;    /* Highlights the page if you hover the mouse over the button */
+}
+
+.naviBar .currentpage {
+    background-color: goldenrod;
+}
+
+
+@media screen and (max-width: 320px){
+    
+    body {
+        /* background-color: red; */
+        margin: 10px
+    }
+
+    .generalBox {
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .naviBar li {
+        background-color: tan;
+        display: block;
+        margin: 0;
+    }
+
+    .naviBox {
+        padding: 10px;
+    }
+
+    .naviBar{
+        background-color: gray;
+        border-radius: 8px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .naviBar a {
+        color: white;
+        background-color: tan;
+        padding: 7px;
+        text-decoration: none;
+    }
+
+    .naviBar li:hover:not(.currentpage){
+        background-color: goldenrod;    /* Highlights the page if you hover the mouse over the button */
+    }
+    
+    .naviBar .currentpage {
+        background-color: goldenrod;
+    }
+
+    .footerBox {
+        width: auto
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        background-color: lightblue;
+        color: indigo;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
